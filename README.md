@@ -129,6 +129,13 @@ git reset --hard
 ## 15. See all the files in git repo (counterpart of LS) 
 git ls-files
 
+## 16. Remove last commit 
+# Keep changes in your working directory(local) 
+git reset --soft HEAD~1 
+# Remove and discard changes
+git reset --hard HEAD~1
+# If commit has been pushed to remote repository 
+git push origin -f
 
 # Errors
 
